@@ -11,8 +11,8 @@
             };
 
             //await Solver.SolveAll(options);
-            await Solver.Solve<Day2024_01>(options);
-            //await Solver.SolveLast(options);
+            //await Solver.Solve<Day2024_01>(options);
+            await Solver.SolveLast(options);
         }
     }
 }
