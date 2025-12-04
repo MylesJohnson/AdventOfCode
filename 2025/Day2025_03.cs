@@ -16,10 +16,8 @@
         {
             int result = 0;
 
-            for(int i = 0; i < _input.Length; i++)
+            foreach (string line in _input)
             {
-                string line = _input[i];
-
                 char firstMax = '0';
                 int indexOfMax = -1;
                 for (int j = 0; j < line.Length - 1; j++) // If the last character is the highest, we can't use it anyway
@@ -80,9 +78,9 @@
         {
             long result = 0;
 
-            for (int i = 0; i < _input.Length; i++)
+            foreach (string line in _input)
             {
-                result += MaxJolt(_input[i], 2);
+                result += MaxJolt(line, 2);
             }
 
             return result;
@@ -92,9 +90,9 @@
         {
             long result = 0;
 
-            for (int i = 0; i < _input.Length; i++)
+            foreach (string line in _input)
             {
-                result += MaxJolt(_input[i], 12);
+                result += MaxJolt(line, 12);
             }
 
             return result;

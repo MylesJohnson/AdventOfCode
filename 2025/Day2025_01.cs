@@ -24,10 +24,8 @@
             int result = 0;
 
             int currentPosition = 50;
-            for (int i = 0; i < _input.Length; i++)
+            foreach(string line in _input)
             {
-                string line = _input[i];
-
                 int sign = line[0] == 'R' ? 1 : -1;
                 int value = int.Parse(line[1..]);
                 currentPosition = mod(currentPosition + (sign * value), 100);
@@ -45,10 +43,8 @@
             int result = 0;
 
             int currentPosition = 50;
-            for (int i = 0; i < _input.Length; i++)
+            foreach (string line in _input)
             {
-                string line = _input[i];
-
                 int sign = line[0] == 'R' ? 1 : -1;
                 int value = int.Parse(line[1..]);
 
@@ -78,10 +74,8 @@
             int result = 0;
 
             int currentPosition = 50;
-            for (int i = 0; i < _input.Length; i++)
+            foreach (string line in _input)
             {
-                string line = _input[i];
-
                 int sign = line[0] == 'R' ? 1 : -1;
                 int value = int.Parse(line[1..]);
 
